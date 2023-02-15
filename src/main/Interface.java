@@ -3,6 +3,7 @@ package main;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -80,6 +81,13 @@ public class Interface {
             }
         }
         return user;
+    }
+
+    public static void finalResult(LocalDate currentDate) {
+        long finalResult = ChronoUnit.DAYS.between(LocalDate.of(2020, 01, 01), currentDate);
+        System.out.print("BRAWO! Udało Ci się przejść grę w: ");
+        System.out.print(finalResult);
+        System.out.print(" dni");
     }
 
     public static int scan(Scanner scanner) {
