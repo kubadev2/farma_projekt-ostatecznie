@@ -1,3 +1,5 @@
+package main;
+
 public class Crop implements Product {
 
     private String cropName;

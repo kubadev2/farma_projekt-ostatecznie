@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +29,7 @@ public class User {
         }
     }
 
-//    public void setAsset(int index, boolean isFarm, List<Farm>farm)
+//    public void setAsset(int index, boolean isFarm, List<main.Farm>farm)
 //    {
 //        if(isFarm)
 //        {
