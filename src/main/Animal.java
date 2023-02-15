@@ -47,4 +47,15 @@ public class Animal implements Product {
     public double getHealth() {
         return health;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "animalName='" + animalName + '\'' +
+                ", purchasePrice=" + purchasePrice +
+                ", happiness=" + happiness +
+                ", dailyMoneyMade=" + dailyMoneyMade +
+                ", health=" + health +
+                '}';
+    }
 }

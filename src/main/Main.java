@@ -1,9 +1,12 @@
 package main;
 
 import static java.lang.System.exit;
+import static main.Interface.animalsAndCropsStatus;
+import static main.Interface.displayFarms;
 import static main.Interface.finalResult;
 import static main.Interface.mainMenu;
-import static main.Interface.shopMenu;
+import static main.Interface.resourcesMenu;
+import static main.Interface.shopMainMenu;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -27,9 +30,19 @@ public class Main {
         while (!user.checkWinCondition()) {
             mainMenu(user, currentDate);
             choice = Interface.scan(scanner);
+            scanner.nextLine();
             switch (choice) {
                 case 1:
-                    shopMenu(user, scanner, shop);
+                    shopMainMenu(user, scanner, shop);
+                    break;
+                case 2:
+                    animalsAndCropsStatus(user);
+                    break;
+                case 3:
+                    displayFarms(user);
+                    break;
+                case 8:
+                    resourcesMenu(user);
                     break;
                 case 9:
                     currentDate = currentDate.plusWeeks(1);

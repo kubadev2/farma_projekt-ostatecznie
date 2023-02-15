@@ -44,4 +44,15 @@ public class Crop implements Product {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Crop{" +
+                "cropName='" + cropName + '\'' +
+                ", purchasePrice=" + purchasePrice +
+                ", sellPrice=" + sellPrice +
+                ", daysToGrow=" + daysToGrow +
+                ", daysGrown=" + daysGrown +
+                '}';
+    }
 }
