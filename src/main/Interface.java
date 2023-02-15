@@ -2,16 +2,12 @@ package main;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Interface {
-
-    private static final DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
     public static void mainMenu(User user, LocalDate currentDate) {
         System.out.println();
@@ -19,8 +15,7 @@ public class Interface {
         System.out.println("Posiadasz " + user.lands.size() + " farm/y");
         System.out.println("Posiadasz " + user.buildings.size() + " budynków");
         System.out.println("Posiadasz " + user.animals.size() + " zwierząt");
-        System.out.println("Posiadasz " + user.lands.size() + " upraw");
-        System.out.println("Posiadasz " + user.wallet + " gotowki");
+        System.out.println("Posiadasz " + new BigDecimal(user.wallet).doubleValue() + " gotowki");
         System.out.println("-------------------------------");
         System.out.println("Jeśli chcesz zakonczyc gre wybierz 0");
         System.out.println("Jeśli chcesz wejść do sklepu wybierz 1");
@@ -35,12 +30,12 @@ public class Interface {
         System.out.println("-------------------------------");
     }
 
-    public static User shopMenu(User user, Scanner scanner, List<Farm> farms) {
+    public static User shopMenu(User user, Scanner scanner, Shop shop) {
         boolean wyjscieMainMenu = false;
         boolean wyjscieShopMenu = false;
         int choice;
         while (!wyjscieMainMenu) {
-            System.out.println();
+            System.out.println("-------------------------------");
             System.out.println("Jezeli chcesz cos kupić wybierz 1");
             System.out.println("Jezeli chcesz cos sprzedac wybierz 2");
             System.out.println("Jezeli chcesz wrocic do poprzedniego menu wybierz 0");
@@ -48,8 +43,9 @@ public class Interface {
             switch (choice) {
                 case 1:
                     while (!wyjscieShopMenu) {
+                        System.out.println("-------------------------------");
                         System.out.println("Przedmioty do zakupu:");
-                        for (Farm farm : farms) {
+                        for (Farm farm : shop.getItemsForSale()) {
                             System.out.print(farm.getFarmId() + ": ");
                             System.out.println(farm);
                         }
@@ -59,12 +55,12 @@ public class Interface {
                         if (choice == 0) {
                             break;
                         }
-                        for (Farm farm : farms) {
+                        for (Farm farm : shop.getItemsForSale()) {
                             if (farm.getFarmId() == choice) {
                                 if (user.getWallet() >= farm.getPrice()) {
                                     user.lands.add(farm);
                                     user.setWallet(user.getWallet() - farm.getPrice());
-                                    farms.remove(farm);
+                                    shop.getItemsForSale().remove(farm);
                                     break;
                                 } else {
                                     System.out.println("Nie masz wystarczajaco pieniedzy!");
@@ -94,8 +90,8 @@ public class Interface {
         return Integer.parseInt(scanner.next());
     }
 
-    public static List<Farm> createNewFarms(int farmId) {
-        List<Farm> farms = new ArrayList<>();
+    public static ArrayList<Farm> createNewFarms(int farmId) {
+        ArrayList<Farm> farms = new ArrayList<>();
         for (int i = farmId; i < farmId + 3; i++) {
             farms.add(new Farm(i, createRandomIntBetween(1, 10), createRandomIntBetween(1, 10),
                     createRandomDoubleBetween(100d, 1000d), createRandomIntBetween(1, 10)));

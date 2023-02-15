@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73a46148-1c4b-4964-88f9-4a5798eb131a" name="Changes" comment="poprawki">
-      <change afterPath="$PROJECT_DIR$/src/main/Interface.java" afterDir="false" />
+    <list default="true" id="73a46148-1c4b-4964-88f9-4a5798eb131a" name="Changes" comment="działające kupowanie farm i generowanie nowych po zakończeniu dnia">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animals/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animals/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animals/Cow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animals/Cow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animals/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animals/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Shop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676499584028</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="oczyszczenie main'a tworząc klasę interface">
+      <created>1676499775367</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676499775367</updated>
+    </task>
+    <task id="LOCAL-00005" summary="działające kupowanie farm i generowanie nowych po zakończeniu dnia">
+      <created>1676500094935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676500094935</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +104,8 @@
     <MESSAGE value="działający generator farm" />
     <MESSAGE value="poprawa interface'u i klas" />
     <MESSAGE value="poprawki" />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawki" />
+    <MESSAGE value="oczyszczenie main'a tworząc klasę interface" />
+    <MESSAGE value="działające kupowanie farm i generowanie nowych po zakończeniu dnia" />
+    <option name="LAST_COMMIT_MESSAGE" value="działające kupowanie farm i generowanie nowych po zakończeniu dnia" />
   </component>
 </project>
