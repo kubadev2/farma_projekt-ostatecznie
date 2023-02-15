@@ -4,69 +4,40 @@ import java.util.ArrayList;
 
 public class Farm {
 
-    private String farmName;
+    private int farmId;
     private ArrayList<Crop> crops = new ArrayList<Crop>();
     private ArrayList<Animal> animals = new ArrayList<Animal>();
-    double surface;
-    double buildingsCapacity;
+    int surface;
+    int buildingsCapacity;
     double price;
+    int cropSpace;
 
-    private int cropSpace;
-
-    public String getFarmName() {
-        return farmName;
-    }
-
-    public void setFarmName(String farmName) {
-        this.farmName = farmName;
-    }
-
-    public ArrayList<Crop> getCrops() {
-        return crops;
-    }
-
-    public void setCrops(ArrayList<Crop> crops) {
-        this.crops = crops;
-    }
-
-    public ArrayList<Animal> getAnimals() {
-        return animals;
-    }
-
-    public void setAnimals(ArrayList<Animal> animals) {
-        this.animals = animals;
-    }
-
-    public double getSurface() {
-        return surface;
-    }
-
-    public void setSurface(double surface) {
+    public Farm(int farmId, int surface, int buildingsCapacity, double price, int cropSpace) {
+        this.farmId = farmId;
         this.surface = surface;
-    }
-
-    public double getBuildingsCapacity() {
-        return buildingsCapacity;
-    }
-
-    public void setBuildingsCapacity(double buildingsCapacity) {
         this.buildingsCapacity = buildingsCapacity;
+        this.price = price;
+        this.cropSpace = cropSpace;
+    }
+
+    public int getFarmId() {
+        return farmId;
     }
 
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    @Override
+    public String toString() {
+        return "Farm{" +
+                "farmId='" + farmId + '\'' +
+                ", crops=" + crops +
+                ", animals=" + animals +
+                ", surface=" + surface +
+                ", buildingsCapacity=" + buildingsCapacity +
+                ", price=" + price +
+                ", cropSpace=" + cropSpace +
+                '}';
     }
-
-    public int getCropSpace() {
-        return cropSpace;
-    }
-
-    public void setCropSpace(int cropSpace) {
-        this.cropSpace = cropSpace;
-    }
-
 }
