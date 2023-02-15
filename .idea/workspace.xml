@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73a46148-1c4b-4964-88f9-4a5798eb131a" name="Changes" comment="poprawa interface'u i klas">
-      <change afterPath="$PROJECT_DIR$/src/animals/Chicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/animals/Cow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/animals/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Building.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Crop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Farm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Farm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flowers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Utils.java" afterDir="false" />
+    <list default="true" id="73a46148-1c4b-4964-88f9-4a5798eb131a" name="Changes" comment="poprawki">
+      <change afterPath="$PROJECT_DIR$/src/main/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +32,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676498569903</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="poprawki">
+      <created>1676499584027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676499584028</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +83,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="działający generator farm" />
     <MESSAGE value="poprawa interface'u i klas" />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawa interface'u i klas" />
+    <MESSAGE value="poprawki" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawki" />
   </component>
 </project>
